@@ -1,129 +1,111 @@
 *{margin:0;padding:0;}
-:root{
-    --colorBG: #ececee;
-    --colorRightWrapper: #c9c9cb;
-    --mainColor: #ddba14;
-    --mainFont: 'Quicksand', sans-serif;
-    --BGRightWrapper: #363638;
-}
-
 html, body{
     width: 100%;height: 100%;
-    font-size: 15px;
+    overflow-x: hidden;
 }
-.wrapper{
-    background: var(--colorBG);
-    font-family: var(--mainFont);
-    padding-top: 100px;
-}
-hr{  border-color: red !important;}
-.information{display: flex;justify-content: space-between;}
+.wrapper{width: 100%;height: 100%;}
 
-.information .leftWrapper{
-    width: 73%;
-    height: auto;
+/**** PHẦN BANNER ****/
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-.information .rightWrapper{
-    width: 27%;
-    height: auto;
-    background: var(--BGRightWrapper);
-    color: var(--colorRightWrapper);
+.banner .left{
+    width: 30%;
 }
-
-/* LEFTWRAPPER CSS*/
-.leftWrapper .resume{display: flex;justify-content: space-between;}
-.resume .left{width: 50%;height: auto;}
-.resume .right{width: 50%;height: auto; padding-left:50px;}
-.resume .left button{
-    background: var(--mainColor);
-    border: 1px solid black;
-    padding: 5px 20px;
+.banner .left img{
+    width: 100%;
+    height: 100%;
 }
-.resume .left h1{
+.banner .right{
+    width: 65%;
+    padding-top:15%;
+    position: relative;
+}
+.menuWrapper{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:5%;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.menuWrapper ul.listMenu{
+    width: 80%;
+    list-style: none;
+    text-align: center;
+}
+.menuWrapper ul.listMenu a{
+    color: rgb(49, 48, 48);
+}
+.menuWrapper ul.listMenu li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.menuWrapper .bars{
+    width: 15%;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(49, 48, 48);
+}
+.menuWrapper ul.listMenu a:hover,
+.menuWrapper .bars:hover{
+    color: gray;
+}
+.right .line1{
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+.right .line1 h3:before{
+    content:"";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: orange;
+    position: absolute;
+    bottom:-1px;
+    left:-12px;
+    z-index: -1;
+}
+.right .line1 h3{
+    z-index: 2;
+    position: absolute;
+    top:0;left:0;
+}
+.right .line2{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: inline-block;
+    margin-top:10px;
+}
+.right .line2 h1{
     font-weight: bold;
     font-size: 70px;
 }
-.resume .right p.phone:before{
-    content:"\f095";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-.resume .right p.email:before{
-    content: "\f0e0";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    
-}
-.resume .right p.fb:before{
-    content: "\f09a";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-.resume .right p.phone:before,
-.resume .right p.email:before,
-.resume .right p.fb:before,
-.information .rightWrapper .dob:before,
-.information .rightWrapper .sex:before,
-.information .rightWrapper .address:before{
-    width: 30px;
-    height: 30px;
+.right .line2 h1:before{
+    content:"";
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    text-align: center;
-    line-height: 30px !important;
-    background: var(--mainColor);
-    font-size: 13px;
-    margin-right: 10px;
-    color: #363638;
+    background: aqua;
+    position: absolute;
+    bottom:-5%;
+    right:-1%;
+    z-index: -1;
+}
+.right .line2 h1{
+    z-index: 2;
+    position: absolute;
+    top:0;left:0;
 }
 
-
-/* RIGHTWRAPPER CSS*/
-.rightWrapper img{width: 100%;height: auto; object-fit: cover;}
-.rightWrapper .text{padding:20px 15px;font-size: 14px;}
-.rightWrapper h2{
-    font-weight: 400;
-    color: white;
+/****/
+.banner .right h4{
+    color: gray;
 }
-.information .rightWrapper .dob:before{
-    content: "\f1fd";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 13px;
-}
-.information .rightWrapper .sex:before{
-    content: "\f221";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-size: 13px;
-}
-.information .rightWrapper .address:before{
-    content: "\f041";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-.rightWrapper .text .education p{margin:0;}
-.rightWrapper .text p.heading{
-    color: white;
-    font-size: 15px;
-    margin:0;
-    padding-bottom: 10px;
-}
+/**** HẾT PHẦN BANNER ****/
