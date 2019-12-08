@@ -12,23 +12,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
-        <div class="banner">
-            <div class="left">
+        <div class="banner col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="left col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <img src="images/avt3.jpg" alt="">
             </div>
-            <div class="right">
+            <div class="right col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
                 <div class="menuWrapper">
                     <ul class="listMenu">
-                        <a href="#"><li>HOME</li></a>
+                        <a href="#"><li class="activeMenu">HOME</li></a>
                         <a href="#"><li>ABOUT ME</li></a>
                         <a href="#"><li>MY PROJECT</li></a>
                         <a href="#"><li>MY RESUME</li></a>
                         <a href="#"><li>CONTACT ME</li></a>
                     </ul>
-                    <div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="bars">
+                        <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+                        <i class="fa fa-times closeTab" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div class="line1">
                     <h3>HELLO! I'M</h3>
@@ -43,7 +47,7 @@
     </div><!----END WRAPPER-->
     
     <!-- Optional JavaScript -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
